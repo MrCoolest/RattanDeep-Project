@@ -23,6 +23,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
      else{
           $username =  trim($_POST["email"]);
           $password =  trim($_POST["passwd"]);
+        
      }
 
      if(empty($err)){
@@ -46,15 +47,18 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
                               //Redirect to user the welcome page
                               header("location:../index.php");
-
+                              
                          } 
                          else{
-                              header("location:./login.php");
+                              // /header("location:./login.php");
+                              $err = "Email-id & Password is not Matching!";
                     }
                     }
                }
                else{
-                    header("location:./login.php");
+                   // header("location:./login.php");
+                   $err = "User is not Registered!";
+
           }
           }
 
@@ -111,6 +115,7 @@ body {
   <form class="my-5 py-5" action="./login.php" method="post">
  
     <h1 class="h3 mb-3 fw-normal text-center">Login</h1>
+    <h5 class="h6 mb-3 fw-normal text-center"><?php echo $err ?></h5>
 
     <div class="form-floating py-1">
       <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" required>
