@@ -1,0 +1,25 @@
+{
+     "carousel" : [
+          {
+          "heading" : "First slide label",
+          "Paragraph" : "Some representative placeholder content for the first slide.",
+          "img_url" : "./images/carousel/carousel_1.jpg"
+          },
+          {
+          "heading" : "Second slide label",
+          "Paragraph" : "Some representative placeholder content for the sSecond slide.",
+          "img_url" : "./images/carousel/carousel_2.jpg"
+          },
+          {
+          "heading" : "Third slide label",
+          "Paragraph" : "Some representative placeholder content for the Third slide.",
+          "img_url" : "./images/carousel/carousel_3.jpg"
+          },
+          {
+          "heading" : "Fourth slide label",
+          "Paragraph" : "Some representative placeholder content for the fourth slide.",
+          "img_url" : "./images/carousel/carousel_4.jpg"
+          }
+
+     ]
+}
