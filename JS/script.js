@@ -28,8 +28,8 @@ function topBooksDisplay(data){
             <p class='card-text'> Description : ${ele.description}</p>
             <div class='d-flex justify-content-between align-items-center'>
               <div class='btn-group'>
-                <a href="${ele.buy_links[0].url}" class='btn btn-sm btn-outline-secondary'> ${ele.buy_links[0].name} </a>
-                <a href="${ele.buy_links[1].url}" class='btn btn-sm btn-outline-secondary'> ${ele.buy_links[1].name} </a>
+                <a target="_blank" href="${ele.buy_links[0].url}" class='btn btn-sm btn-outline-secondary'> ${ele.buy_links[0].name} </a>
+                <a target="_blank" href="${ele.buy_links[1].url}" class='btn btn-sm btn-outline-secondary'> ${ele.buy_links[1].name} </a>
                
               </div>
               <small class='text-muted'>9 mins</small>

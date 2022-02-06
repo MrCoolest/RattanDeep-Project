@@ -19,6 +19,9 @@
                echo '<li class="nav-item">
                   <a class="nav-link"  href="/rd_proj/data/videos.php">Videos</a>
                 </li>';
+               echo '<li class="nav-item">
+                  <a class="nav-link"  href="/rd_proj/data/books.php">Books</a>
+                </li>';
               }
 
               ?> 

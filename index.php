@@ -111,15 +111,15 @@ $context = json_decode($json2,true);
           <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
           <p>
           <?php
-              if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
-              {
-          echo '<div class=" mx-auto">
-                <div class="form-outline">
-                  <input type="search" id="search_input" class="input-search" />
-                  <button type="button" id="search_btn" class="btn btn-primary">Search</button>
-                </div>
-              </div>';
-              }
+          //     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
+          //     {
+          // echo '<div class=" mx-auto">
+          //       <div class="form-outline">
+          //         <input type="search" id="search_input" class="input-search" />
+          //         <button type="button" id="search_btn" class="btn btn-primary">Search</button>
+          //       </div>
+          //     </div>';
+          //     }
             ?>  
             <!-- <a href="#" class="btn btn-primary my-2">Main call to action</a>
             <a href="#" class="btn btn-secondary my-2">Secondary action</a> -->

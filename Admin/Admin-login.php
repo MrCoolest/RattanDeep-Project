@@ -13,7 +13,7 @@
 
      //Decode JSON
      $json_data = json_decode($json,true);
-     // print_r($json_data["context"]["Username"]);
+     
 
 $username = trim($json_data["context"]["Admin"]);
 //echo $username;
@@ -55,6 +55,7 @@ header("Refresh:0");
 
 <!-- Youtube form link -->
 <section class="container my-5 py-5">
+ <center> <a href="./Admin-books.php" class="btn btn-secondary">Add Books</a> </center>
 <h1 class="h3 mb-3 fw-normal text-center">Youtube link</h1>
 <form action="./Admin-login.php" method="post">
 <div class="mx-5 px-5 py-1">
@@ -114,11 +115,11 @@ if ($result->num_rows > 0) {
       <td>'. $row["name"].'</td>
       <td>'. $row["link"].'</td>
       <td>'. $row["category"].'</td>
-      <td><a href="./Admin-delete.php?id='.$row["id"].'" class="btn btn-danger">Danger</a></td>
+      <td><a href="./Admin-video-delete.php?id='.$row["id"].'" class="btn btn-danger">Delete</a></td>
       
       </tr>';
 
-    // echo "id: " . $row["id"]. " - Name: " . $row["name"]. " " . $row["link"]. "<br>";
+
   }
 } 
 $conn->close();
