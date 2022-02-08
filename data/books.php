@@ -43,7 +43,7 @@ if ($result->num_rows > 0) {
      <div class="card-body">
        <h5 class="card-title">'. $row["name"].'</h5>
        
-       <a href="./books/'.$row["pdf_name"].'" class="btn btn-primary">Read</a>
+       <a target="_blank" href="./books/'.$row["pdf_name"].'" class="btn btn-primary">Read</a>
      </div>
    </div>';
 
