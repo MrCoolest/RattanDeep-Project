@@ -23,6 +23,22 @@
                   <a class="nav-link"  href="/rd_proj/data/books.php">Books</a>
                 </li>';
               }
+             
+              // $json = file_get_contents('/rd_proj/Json/context.json');
+
+              // //Decode JSON
+              // $json_data = json_decode($json,true);
+              // // print_r($json_data["context"]["Username"]);
+
+              // $username = trim($json_data["context"]["Admin"]);
+              // //echo $username;
+
+              // if(isset($_SESSION['username']) && $_SESSION['username'] === $username){
+              //   echo '<li class="nav-item">
+              //   <a class="nav-link"  href="/rd_proj/Admin/Admin-login.php">Admin</a>
+              // </li>';
+              // }
+
 
               ?> 
               

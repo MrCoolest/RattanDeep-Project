@@ -41,7 +41,7 @@ if ($result->num_rows > 0) {
      echo '<div class="card" style="width: 18rem;">
      <img class="card-img-top" src="./books_images/'.$row["book_img"].'" alt="">
      <div class="card-body">
-       <h5 class="card-title">'. $row["name"].'</h5>
+       <h5 class="card-title" title="'.$row["name"].'">'. substr($row["name"], 0, 15).'...</h5>
        
        <a target="_blank" href="./books/'.$row["pdf_name"].'" class="btn btn-primary">Read</a>
      </div>
